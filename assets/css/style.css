@@ -121,6 +121,7 @@ body{
 }
 .recipe-thumb{
   height:45vh;
+  width:auto;
   background:var(--brand-200);
   display:flex;
   align-items:center;
