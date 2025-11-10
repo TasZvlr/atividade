@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const API_KEY = "6f07ed9f3cc2486b91457d372ff4bb3f"; 
+const API_KEY = "29bb2c71b5f94758930f7ba4ee9012c4"; 
 
 async function loadAPIRecipes(){
   const root = document.getElementById("recipes-root");
