@@ -1,0 +1,242 @@
+
+:root{
+  --brand-900:#393533;
+  --brand-700:#265037;
+  --brand-200:#dce4cf;
+  --accent:#ad0c07;
+  --accent2:#ff9e01;
+  --bg:#f7f7f6;
+  --card:#ffffff;
+}
+
+#menu-btn{
+    background:var(--brand-700);
+    color:#fff;
+    width:6vh;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    font-size:22px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 3vh;
+  }
+
+*{box-sizing:border-box; margin:0; padding:0;}
+body{
+  font-family:"DM Sans", "Public Sans", system-ui;
+  background:var(--bg);
+  color:var(--brand-900);
+  height:100%;
+}
+
+.app{display:flex; min-height:100vh;}
+
+.sidebar{
+  width:45vh;
+  background:#fff;
+  border-right:1px solid #eee;
+  padding:20px;
+  position:relative;
+  top:0; bottom:0; left:0;
+}
+.logo{
+  width:5vh; height:5vh;
+  background:var(--brand-700);
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:8px;
+  font-weight:700;
+}
+.brand{display:flex; gap:10px; align-items:center; margin-bottom:20px;}
+.nav{display:flex; flex-direction:column; gap:5px; margin-top:10px;}
+.nav a{
+  text-decoration:none;
+  padding:10px;
+  border-radius:6px;
+  font-size:3.5vh;
+  color:var(--brand-900);
+}
+.nav a:hover, .nav a.active{
+  background:var(--brand-700);
+  color:#fff;
+}
+
+.site-title {
+  margin-left: 10vh;
+}
+.main{
+  margin-left:10px;
+  padding:25px;
+  width:100%;
+}
+
+.topbar{
+  display:none;
+}
+@media(max-width:900px){
+
+  .sidebar{
+    left:-100%;
+    width:80%;
+    max-width:280px;
+    background:#fff;
+    position:fixed;
+    top:0;
+    bottom:0;
+    z-index:300;
+    transition:.25s ease;
+    padding-top:70px;
+  }
+
+  .sidebar.open{
+    left:0;
+  }
+
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    background:#fff;
+    position:absolute;
+    top:0;
+    width:100%;
+    height:60px;
+    border-bottom:1px solid #eee;
+    z-index:400;
+    padding-left:2vh;
+    left: 0;
+
+  }
+
+  
+}
+.card{
+  background:var(--card);
+  padding:15px;
+  border-radius:8px;
+  box-shadow:0 0 10px #0001;
+  margin-bottom:20px;
+}
+.recipe-thumb{
+  height:45vh;
+  background:var(--brand-200);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  border-radius:8px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.footer{
+  text-align:center;
+  font-size:3vh;
+  opacity:.6;
+  margin-top:30px;
+}
+
+.imgscard {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 26px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.cat-card {
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  border-radius: 14px;
+  display: flex;
+  align-items: end;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  backdrop-filter: brightness(.8);
+  width: 30vh;
+}
+.community-box {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 10px #0001;
+}
+
+.section {
+  margin: 20px;
+  font-size: 22px;
+}
+
+.posts-grid {
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  gap: 16px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 0 10px #0001;
+  text-align: center;
+}
+
+.post-card .img {
+  background: #ddd;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+  width: 25vh;
+  height: 5vh;
+  font-size: 3.5vh;
+}
+
+.avaliacoes {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+a, p, h1, h2, h3, h4 {
+  font-size: 3.5vh;
+}
+
+.estrela {
+  font-size: 3.5vh;
+}
+
+.categoriasdiv {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+  left: 0;
+}
